@@ -1,0 +1,83 @@
+# This .gitignore file is specifically designed for the AI Powered Request Handler Tool MVP.
+# It is meticulously crafted to exclude files and directories that are not essential for the project's core functionality.
+# The goal is to maintain a clean, organized, and efficient Git repository while ensuring that all crucial components are included for deployment.
+
+# Python related files:
+# - Exclude default Python cache files, build artifacts, and temporary files:
+__pycache__
+*.pyc
+*.pyo
+*.pyd
+*.egg-info
+dist
+build
+
+# Dependencies:
+# - Exclude dependency-related files, including virtual environment folders and package installation records:
+venv
+.venv
+*.egg
+pip-log.txt
+requirements.txt
+
+# Testing:
+# - Exclude test results and coverage files:
+# - However, include test code itself to ensure proper functionality is tested:
+tests/unit/test_openai_service.py
+tests/unit/test_db_service.py
+
+# Logging and Debugging:
+# - Exclude log files generated during development and debugging:
+*.log
+*.out
+*.err
+
+# Documentation:
+# - Exclude generated documentation, but include the README.md file for project information:
+docs/
+*.rst
+*.html
+
+# IDE and Editor Settings:
+# - Exclude configuration files for specific development environments:
+.idea
+.vscode
+*.suo
+*.user
+*.sln
+*.tmp
+*.userprefs
+*.vbp
+*.suo
+*.ncb
+*.opendb
+*.aps
+*.sln
+*.pdb
+*.suo
+
+# Containerization:
+# - Exclude Docker-related files, but include the Dockerfile for containerization:
+Dockerfile
+docker-compose.yml
+.dockerignore
+.circleci
+.gitlab-ci.yml
+
+# Sensitive Information:
+# - Exclude any configuration files or scripts that contain sensitive data, such as API keys or database credentials:
+.env
+
+# Temporary Files:
+# - Exclude temporary files created during development:
+*.pyo
+*.pyc
+*.swp
+*.swo
+*.bak
+*.tmp
+
+# Other Files:
+# - Exclude any other files that are not essential for the project:
+*.DS_Store
+Thumbs.db
