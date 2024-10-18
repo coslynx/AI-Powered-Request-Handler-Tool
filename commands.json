@@ -1,0 +1,42 @@
+{
+  "commands": [
+    {
+      "name": "translate",
+      "description": "Translate text from one language to another.",
+      "example": {
+        "text": "Hello, how are you?",
+        "source_language": "en",
+        "target_language": "es"
+      }
+    },
+    {
+      "name": "summarize",
+      "description": "Summarize a given text.",
+      "example": {
+        "text": "The quick brown fox jumps over the lazy dog. This is a very short story about a fox and a dog. The end."
+      }
+    },
+    {
+      "name": "generate_code",
+      "description": "Generate code in a specific programming language.",
+      "example": {
+        "language": "python",
+        "prompt": "Write a function that prints 'Hello, World!'"
+      }
+    },
+    {
+      "name": "write_story",
+      "description": "Write a creative story based on a given prompt.",
+      "example": {
+        "prompt": "A young girl discovers a magical portal in her backyard."
+      }
+    },
+    {
+      "name": "answer_question",
+      "description": "Answer a question in a comprehensive and informative way.",
+      "example": {
+        "question": "What is the capital of France?"
+      }
+    }
+  ]
+}
